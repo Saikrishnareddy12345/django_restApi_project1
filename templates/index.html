@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Show all records</title>
+    <style>
+        body{
+        background-color:pink;
+        }
+    </style>
+</head>
+<body>
+<h3 align="center" style="background-color:red">The data from data base is:</h3>
+<table border="1" bgcolor="yellow" align="center">
+    <tr>
+        <th>Name</th>
+        <th>Category</th>
+        <th>Price</th>
+        <th>Description</th>
+        <th>Stars</th>
+    </tr>
+    {% for display in Product1 %}
+    <tr>
+        <td>{{display.name}}</td>
+        <td>{{display.category}}</td>
+        <td>{{display.price}}</td>
+        <td>{{display.description}}</td>
+        <td>{{display.starts}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>
