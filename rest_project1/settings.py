@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'rest_project1.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'rest_api1',
+        'NAME': 'sai',
         'USER':'root',
         'PASSWORD':'',
         'HOST':'localhost',
