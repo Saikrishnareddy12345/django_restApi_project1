@@ -10,9 +10,10 @@ from .models import Product,Product1
 @api_view(['GET'])
 def App1overview(request):
     app_urls = {
-        'if you want show all data from db (in table format)--->':'/list',
-        'if you want show only one record(json format)-->': '/detail/<int:id>    ex:/deatil/2',
-        'if you want create new record(json format) as input': '/create/',
+        'To show all the Products from db (in table format)--->':'/list',
+        'To show all the Products from DB in JSON format ---->':'/list1',
+        'To see only one Product(json format)-->': '/detail/<int:id>    ex:/deatil/2',
+        'want to create new Product details(json format) as input': '/create/',
         'if you want update specific record(json format)': '/update/<int:id>    ex:/update/3',
         'if you want delete specific record--->': '/delete/<int:id>  ex:/delete/3',
     }
