@@ -53,9 +53,9 @@ DATABASES = {
 
 Ensure that the above configuration is correctly entered and save the file.
 
-Now its time to migrate the application tables and and needs to create table header by using the migration.
+Now its time to migrate the application tables and needs to create table headers by using the migration.
 
-and ensure that you must be in the place of the manage.py file location.
+and ensure that you must be in the place of the manage.py file location and run the following commands below.
 
 **Commands:-**
 
