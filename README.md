@@ -73,7 +73,7 @@ py manage.py makemigrations
 
 ```
 
-the list of migrations will be show after you entered the command.
+the list of migrations will be shown after you entered the above command.
 
 ```
 
@@ -81,7 +81,7 @@ py manage.py migrate
 
 ```
 
-This command do the migration and created the tables in your DB automatically
+The above command will do the migration and create the tables into your DB automatically
 
 now you can run the django server
 
@@ -101,7 +101,7 @@ http://127.0.0.1:3000/
 
 ```
 
-2) the API shows only one Record and output look like JSON format 
+2) the API shows only one Product and output look like JSON in format 
 
 ```shell
 
@@ -140,6 +140,6 @@ http://127.0.0.1:3000/list1/
 
 ```
 
-###Thank You###
+***Thank You###
 
 
