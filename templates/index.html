@@ -17,7 +17,7 @@
         <th>Category</th>
         <th>Price</th>
         <th>Description</th>
-        <th>Stars</th>
+        <th>Rating</th>
     </tr>
     {% for display in Product %}
     <tr>
@@ -25,7 +25,7 @@
         <td>{{display.category}}</td>
         <td>{{display.price}}</td>
         <td>{{display.description}}</td>
-        <td>{{display.starts}}</td>
+        <td>{{display.rating}}</td>
     </tr>
     {% endfor %}
 </table>
