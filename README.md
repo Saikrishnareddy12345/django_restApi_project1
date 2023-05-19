@@ -117,6 +117,20 @@ http://127.0.0.1:3000/create/
 
 ```
 
+The creation of data must be in JSON Format. use the below syntax of format to eliminate the errors while you are creating Product.
+
+```shell
+
+{
+    "name": "TV",
+    "category": "Electronics",
+    "price": "30000.0",
+    "description": "watching",
+    "rating": 4
+    }
+
+```
+
 4) Update the Product by using Id.
 
 ```shell
