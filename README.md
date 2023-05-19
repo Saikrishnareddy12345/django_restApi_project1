@@ -1,0 +1,145 @@
+# django_restApi_project1
+
+getting data from admin console to webPage
+
+This project to store the information about instruments, things, products and etc
+
+all the data stored in Database. 
+
+the product getting stored with name, brand, type or purpose, description about Product and Rating.
+
+**Django Create Project**
+
+**Pre-requisities:-**
+
+install below Packages in your PC.
+
+```
+pip install django
+
+pip install djangorestframework
+
+```
+
+**Commands:-**
+
+Clone  this Django Project using below commands
+
+```Shell
+git clone https://github.com/Saikrishnareddy12345/django_restApi_project1.git
+
+cd django_restApi_project1/
+
+```
+Modify the settings.py file, update the database configuration.
+
+file path is  **rest_project1/settings.py**
+
+```shell
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'db_name',
+        'USER':'user_nam',
+        'PASSWORD':'password',
+        'HOST':'hostname',
+        'PORT':'3306',
+    
+    }
+}
+
+```
+
+Ensure that the above configuration is correctly entered and save the file.
+
+Now its time to migrate the application tables and and needs to create table header by using the migration.
+
+and ensure that you must be in the place of the manage.py file location.
+
+**Commands:-**
+
+```shell
+
+python manage.py makemigrations
+
+```
+
+OR
+
+```shell
+
+py manage.py makemigrations
+
+```
+
+the list of migrations will be show after you entered the command.
+
+```
+
+py manage.py migrate
+
+```
+
+This command do the migration and created the tables in your DB automatically
+
+now you can run the django server
+
+```shell
+
+py manage.py runserver 0.0.0.0:3000
+
+```
+
+***Supported API's***
+
+1) to redirect the Home page, and it shows the API operations
+
+```shell
+
+http://127.0.0.1:3000/
+
+```
+
+2) the API shows only one Record and output look like JSON format 
+
+```shell
+
+http://127.0.0.1:3000/detail/2
+
+```
+
+3) Create the product.
+ 
+```shell
+
+http://127.0.0.1:3000/create/
+
+```
+
+4) Update the Product by using Id.
+
+```shell
+
+http://127.0.0.1:3000/update/3
+
+```
+
+5) Delete the Product using with id.
+
+```shell
+
+http://127.0.0.1:3000/delete/3
+
+```
+
+6) listout the all products in JSON format.
+
+```
+http://127.0.0.1:3000/list1/
+
+```
+
+###Thank You###
+
+
