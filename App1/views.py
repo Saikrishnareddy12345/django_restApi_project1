@@ -29,7 +29,7 @@ def showall(request):
 @api_view(['GET'])
 def showall1(request):
     products = Product1.objects.all()
-    return render(request, "index.html", {'Product1': products})
+    return render(request, "index.html", {'Product': products})
 
 
 @api_view(['GET'])
