@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'rest_project1.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'sai',
-        'USER':'root',
-        'PASSWORD':'Student#0509',
+        'NAME': 'DB_NAME',
+        'USER':'DB_USER',
+        'PASSWORD':'PASSWORD',
         'HOST':'mysql', ##The host should be the name of the Service name of mysql service in Docker-compose.whether this application are hosting on docker-compose.
         # 'HOST':'localhost', ##the host shold be localhost if you host this applcation on OS or VM. and the mysql connection should comes from different location in third pary and docker container.
         'PORT':'3306'
