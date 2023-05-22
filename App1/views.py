@@ -16,6 +16,14 @@ def App1overview(request):
         'want to create new Product details(json format) as input': '/create/',
         'if you want update specific record(json format)': '/update/<int:id>    ex:/update/3',
         'if you want delete specific record--->': '/delete/<int:id>  ex:/delete/3',
+        'Example': 
+           {
+        "name": "vivo v27 pro",
+        "category": "electronics",
+        "price": "45000",
+        "description": "best in camera segment",
+        "rating": 4
+            }
     }
 
     return Response(app_urls)

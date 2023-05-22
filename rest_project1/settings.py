@@ -82,8 +82,9 @@ DATABASES = {
         'NAME': 'sai',
         'USER':'root',
         'PASSWORD':'Student#0509',
-        'HOST':'localhost',
-        'PORT':'3306',
+        'HOST':'mysql', ##The host should be the name of the Service name of mysql service in Docker-compose.whether this application are hosting on docker-compose.
+        # 'HOST':'localhost', ##the host shold be localhost if you host this applcation on OS or VM. and the mysql connection should comes from different location in third pary and docker container.
+        'PORT':'3306'
     
     }
 }
@@ -113,7 +114,8 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'Asia/kolkata'
+# TIME_ZONE = 'Asia/kolkata'
+TIME_ZONE = 'Asia/Dhaka'
 
 USE_I18N = True
 
