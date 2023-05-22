@@ -3,11 +3,8 @@ services:
   mysql:
     image: mysql
     container_name: first_sql
-    tty: true
     ports:
       - 3306:3306
-    expose:
-      - 3306
     environment:
       # - MYSQL_ROOT_PASSWORD=Student#0509
       - MYSQL_DATABASE=sai
@@ -19,8 +16,6 @@ services:
     restart: unless-stopped
     networks:
       - django
-    # command: sh -c 'mysql -u root -pStudent#0509 -e "create database sai";'
-    # command: mysqld --lower_case_table_names=1 --skip-ssl --character_set_server=utf8 --explicit_defaults_for_timestamp
   rest_api:
     build: .
     container_name: django1
@@ -30,19 +25,16 @@ services:
     #   - "host.docker.internal:host-gateway"
     # external_links:
     #   - first_sql
-    links:
-      - mysql:mysql
+    # links:
+    #   - mysql:mysql
     ports:
       - 80:80
     volumes:
       - ./mysql-data:/var/lib/mysql
-    environment:
-      - DB_HOST=mysql
-      - DB_PORT=3306
     restart: unless-stopped
     networks:
       - django
-    command: sh -c 'python manage.py migrate ; python manage.py runserver 0.0.0.0:80'
+    command: sh -c 'sleep 15 ; python manage.py makemigrations ; python manage.py migrate ; python manage.py runserver 0.0.0.0:80'
 
 networks:
   django:

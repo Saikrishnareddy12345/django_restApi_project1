@@ -7,5 +7,4 @@ WORKDIR /django
 COPY . .
 RUN pip install -r requirements.txt
 # EXPOSE 80
-RUN python manage.py makemigrations
 # CMD python manage.py runserver 0.0.0.0:80
