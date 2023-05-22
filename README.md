@@ -113,6 +113,26 @@ py manage.py runserver 0.0.0.0:3000
 
 ```
 
+**In Docker-compose to start the containers**
+
+you should be in the same place where the docker-compose.yml file is there, and run the following commands.
+
+```shell
+
+docker-compose up -d
+
+```
+
+docker commnands works for the logs of the containers.
+
+down the containers(also should be the same place where the docker-compose.yml file is placed)
+
+```shell
+
+docker-compose down
+
+```
+
 ***Supported API's***
 **Use POSTMAN tool to test this All API's, you feel real world api testing while you are doing Testing**
 
