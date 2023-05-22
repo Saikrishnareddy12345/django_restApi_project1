@@ -135,7 +135,7 @@ docker-compose down
 
 ***Supported API's***
 
-**Use the POSTMAN tool to test this All API's, you feel real world api testing while you are doing Testing**
+**Use the POSTMAN tool to test this All API's, It's better to feel real world api testing while you are doing Testing**
 
 1) To redirect to the Home page, and it shows the API operations
 
