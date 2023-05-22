@@ -35,6 +35,8 @@ Modify the settings.py file, update the database configuration.
 
 file path is  **rest_project1/settings.py**
 
+**Put it here HOST is localhost, if you are hosting this application on top of Any OS or Virtual Machine ot your Local Laptop**
+
 ```shell
 
 DATABASES = {
@@ -43,13 +45,33 @@ DATABASES = {
         'NAME': 'db_name',
         'USER':'user_nam',
         'PASSWORD':'password',
-        'HOST':'hostname',
+        'HOST':'localhost',  
         'PORT':'3306',
     
     }
 }
 
 ```
+
+**Put it here HOST is mysql, if you are hosting this application on top of Any OS or Virtual Machine ot your Local Laptop**
+
+```shell
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'db_name',
+        'USER':'user_nam',
+        'PASSWORD':'password',
+        'HOST':'mysql',  ###this name should be match with the service name of mysql service on docker-compose.yml file which is showed in below picture.
+        'PORT':'3306',
+    
+    }
+}
+
+```
+
+![Screenshot](docker-compose-service-name.png)
 
 Ensure that the above configuration is correctly entered and save the file.
 
