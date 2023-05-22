@@ -114,8 +114,9 @@ py manage.py runserver 0.0.0.0:3000
 ```
 
 ***Supported API's***
+**Use POSTMAN tool to test this All API's, you feel real world api testing while you are doing Testing**
 
-1) to redirect the Home page, and it shows the API operations
+1) To redirect to the Home page, and it shows the API operations
 
 ```shell
 
@@ -123,7 +124,7 @@ http://127.0.0.1:3000/
 
 ```
 
-2) the API shows only one Product and output look like JSON in format 
+2) the API shows only one Product and the output looks like in JSON format 
 
 ```shell
 
@@ -168,6 +169,8 @@ http://127.0.0.1:3000/update/3
 http://127.0.0.1:3000/delete/3
 
 ```
+
+Before doing this operation, you must run the 6 th step. it means you could know the id's and products in JSON format for which you want to delete. 
 
 6) listout the all products in JSON format.
 
