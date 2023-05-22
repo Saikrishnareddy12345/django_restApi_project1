@@ -35,7 +35,7 @@ Modify the settings.py file, update the database configuration.
 
 file path is  **rest_project1/settings.py**
 
-**Put it here HOST is localhost, if you are hosting this application on top of Any OS or Virtual Machine ot your Local Laptop**
+**Put it here HOST is localhost,if you are hosting this application on top of Any OS or Virtual Machine or your Local Laptop**
 
 ```shell
 
@@ -53,7 +53,7 @@ DATABASES = {
 
 ```
 
-**Put it here HOST is mysql, if you are hosting this application on top of Any OS or Virtual Machine ot your Local Laptop**
+**Put it here HOST is mysql, if you are hosting this application on top docker-compose must do this configuration**
 
 ```shell
 
